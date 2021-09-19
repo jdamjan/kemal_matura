@@ -1,0 +1,53 @@
+\documentclass[12pt,twoside]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{csquotes}
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[RO,LE]{Thesis Title}
+\fancyfoot{}
+\fancyfoot[LE,RO]{\thepage}
+\fancyfoot[LO,CE]{Chapter \thechapter}
+\fancyfoot[CO,RE]{Damjan Janchevski}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\usepackage{biblatex}
+\addbibresource{ref.bib}
+
+\usepackage[english, macedonian]{babel}
+
+\author{Damjan Janchevski}
+\date{May 2022}
+
+\begin{document}
+
+\input{titlepage}
+
+\selectlanguage{english}
+\tableofcontents
+
+\setcounter{chapter}{-1}
+\chapter{Introduction}
+\input{chapters/00_introduction}
+
+\chapter{Chapter One}
+\input{chapters/01_chapter01}
+
+\chapter{Chapter Two}
+\input{chapters/02_chapter02}
+
+\chapter{Chapter Three}
+\input{chapters/03_chapter03}
+
+\chapter{Conclusion}
+\input{chapters/04_conclusion}
+
+\printbibliography
+
+\end{document}
