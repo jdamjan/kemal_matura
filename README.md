@@ -10,4 +10,6 @@
 
 пс. не ги заборавај индексите од [ref.bib](https://github.com/jdamjan/kemal_matura/blob/main/ref.bib) во [citations.tex](https://github.com/jdamjan/kemal_matura/blob/main/pages/citations.tex)
 
+[Пример](https://github.com/jdamjan/kemal_matura/blob/main/Matura%20Project%20Example.pdf)
+
 Среќно :)
