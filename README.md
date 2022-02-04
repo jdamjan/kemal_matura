@@ -12,6 +12,4 @@
 
 [Пример](https://github.com/jdamjan/kemal_matura/blob/main/Matura%20Project%20Example.pdf)
 
-[Link button](http://example.com/){: .btn }
-
 Среќно :)
