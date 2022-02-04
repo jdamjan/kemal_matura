@@ -1,39 +1,52 @@
 \documentclass[12pt,twoside]{report}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
+\usepackage{wrapfig}
 \graphicspath{ {images/} }
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{csquotes}
-\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
+\usepackage[a4paper,width=140mm,top=30mm,bottom=30mm,bindingoffset=6mm]{geometry}
+
+\usepackage{float}
+\usepackage{setspace}
+
+\usepackage{physics}
+\usepackage{currvita}
+
+\usepackage{hyperref}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhead{}
-\fancyhead[RO,LE]{Thesis Title}
-\fancyfoot{}
-\fancyfoot[LE,RO]{\thepage}
-\fancyfoot[LO,CE]{Chapter \thechapter}
-\fancyfoot[CO,RE]{Damjan Janchevski}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[RO,LE]{Project title}
 \renewcommand{\headrulewidth}{0.4pt}
-\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
 
 \usepackage{biblatex}
 \addbibresource{ref.bib}
 
 \usepackage[english, macedonian]{babel}
 
-\author{Damjan Janchevski}
+\usepackage{blindtext}
+
+\author{Author's name}
 \date{May 2022}
 
 \begin{document}
 
-\input{titlepage}
+\input{pages/titlepage}
+
+\input{pages/blank}
 
 \selectlanguage{english}
+
 \tableofcontents
 
-\setcounter{chapter}{-1}
-\chapter{Introduction}
+\doublespacing
+\setcounter{chapter}{0}
+\chapter*{Introduction}
+\addcontentsline{toc}{chapter}{Introduction}
 \input{chapters/00_introduction}
 
 \chapter{Chapter One}
@@ -45,9 +58,9 @@
 \chapter{Chapter Three}
 \input{chapters/03_chapter03}
 
-\chapter{Conclusion}
-\input{chapters/04_conclusion}
+\input{pages/citations}
 
 \printbibliography
+\addcontentsline{toc}{chapter}{Bibliography}
 
 \end{document}
